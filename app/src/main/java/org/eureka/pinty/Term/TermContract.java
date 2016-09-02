@@ -1,4 +1,4 @@
-package org.eureka.pinty.Term;
+package org.eureka.pinty.term;
 
 import org.eureka.pinty.BasePresenter;
 import org.eureka.pinty.BaseView;

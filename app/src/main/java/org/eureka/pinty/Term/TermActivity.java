@@ -1,4 +1,4 @@
-package org.eureka.pinty.Term;
+package org.eureka.pinty.term;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -29,25 +29,12 @@ public class TermActivity extends AppCompatActivity
         // set the toolbar as the app bar
         setSupportActionBar(toolbar);
 
-        // get appcompat AcitonBar
-/*        ActionBar ab = getSupportActionBar();
-        ab.hide();
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });*/
-
         // set up the navigation drawer
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mToggle = new ActionBarDrawerToggle(
                 this, mDrawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
 
-        // don't know meaning
+        // not necessary now
         //mDrawerLayout.setDrawerListener(mToggle);
         mToggle.syncState();
 
@@ -126,7 +113,7 @@ public class TermActivity extends AppCompatActivity
 /*    @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
+        // Handle navigation viewutils item clicks here.
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
